@@ -81,5 +81,4 @@
       delay: 30
       until: (registration.status == 200)
       register: registration
-
   when: application.json.totalCount == 0
