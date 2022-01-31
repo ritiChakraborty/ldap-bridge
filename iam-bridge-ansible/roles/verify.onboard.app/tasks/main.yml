@@ -3,7 +3,7 @@
 
 - name: inspect previous registration
   uri:
-    url: '{{ verify_host }}/v1.0/applications?search="q={{ {{ application_name }} | regex_replace(" ","%20") }}"'
+    url: '{{ verify_host }}/v1.0/applications?search="q={{ {{ lookup(vars,application_name) }} | regex_replace(" ","%20") }}"'
     method: GET
     status_code: [200]
     validate_certs: yes
