@@ -9,6 +9,7 @@
     - roles/verify.onboard.app
     - ldaps.ca.deploy    
   vars:
+    application_id: "{{ APPLICATION_NAME }}"
     verify_host: "{{ VERIFY_URL }}"
     client_id: "{{ VERIFY_CLIENT_ID }}"
     client_secret: "{{ VERIFY_CLIENT_SECRET }}"
